@@ -53,7 +53,7 @@ h1 {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: rgb(35, 35, 35);
+	background-color: rgb(20, 27, 37);
 	width: 67px;
 	padding: 0px;
 	z-index: 1;
@@ -70,7 +70,7 @@ h1 {
 	width: 100%;
 }
 .dropdown-content a {
-	background-color: rgb(35, 35, 35);
+	background-color: rgb(20, 27, 37);
 	color: gray;
 	border: none;
 	padding: 15px 0px 15px 3px;
@@ -195,6 +195,11 @@ main {
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
+	transition-duration: 0.1s;
+}
+#banner-button:hover a {
+	background-color: rgba(191, 146, 91, 0.5);
+	color: white;
 }
 
 	/* MAIN */
