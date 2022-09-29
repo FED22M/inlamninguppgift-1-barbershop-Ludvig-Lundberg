@@ -16,8 +16,8 @@ body {
 header {
 	position: -webkit-sticky;
 	position: sticky;
-	top: 2px;
-	padding: 5px 0px 5px 0px;
+	top: 0px;
+	padding: 7px 0px 5px 0px;
 	border-top: 5px solid black;
 	border-bottom: 5px solid black;
 	height: 35px;
@@ -114,7 +114,8 @@ h1 {
 		padding: 8px 10px;
 	}
 		header {
-			background-color: rgba(35, 35, 35, 0.8)
+			background-color: rgb(35, 35, 35);
+			opacity: 95%;
 	}
 }
 @media (min-width: 1080px) {
@@ -137,19 +138,26 @@ main {
 		padding: 0px;
 		margin: 0px;
 }
+#main-div-1 {
+		top: 10px;
+		height: 900px;
+}
 #banner-img {
+		top: 10px;
 		background-image: url(images/header_banner.jpg);
 		background-size: 260%;
-		background-position: top;
 		background-repeat: no-repeat;
+		background-position: top;
+		background-attachment: fixed;
 		width: 100%;
 		height: 100%;
 		margin-top: -45px;
 		opacity: 30%;
+		padding-bottom: 100px;
 }
 #banner-img-text {
 		position: absolute;
-		top: 38%;
+		top: 320px;
 		z-index: 2;
 		margin-left: 10px;
 		text-transform: uppercase;
@@ -183,6 +191,7 @@ main {
 #banner-button {
 	width: 47%;
 	margin: 13% 0px 0px 2px;
+	z-index: 10;
 }
 #banner-button a{
 	width: 100%;
@@ -196,10 +205,51 @@ main {
 	text-align: center;
 	text-decoration: none;
 	transition-duration: 0.1s;
+	z-index: 10;
 }
 #banner-button:hover a {
 	background-color: rgba(191, 146, 91, 0.5);
 	color: white;
+}
+#hair-styles {
+	height: 100%;
+	width: 100%;
+}
+.hair-styles-div {
+	position: relative;
+	height: 35%;
+	padding-top: 100px;
+}
+.hair-styles-div img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+	margin-top: -200px;
+}
+.hair-styles-div-light {
+	background-color: rgb(191, 146, 91);
+}
+.hair-styles-div-dark {
+	background-color: rgb(171, 126, 71);
+}
+.hair-styles-title, .hair-styles-breadtext {
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	color: rgb(240, 240, 240);
+	line-height: 30px;
+}
+.hair-styles-title {
+	font-size: 30px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-top: 28px;
+	margin-bottom: 14px;
+	letter-spacing: -1px;
 }
 
 	/* MAIN */
